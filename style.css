@@ -1,0 +1,146 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #eaf6fb;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+}
+
+.naglowek {
+    background-color: #1991b6;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #2980b9;
+}
+
+.nawigacja-lewa {
+    width: 20%;
+    float: left;
+    background-color: transparent;
+    padding: 15px;
+    box-shadow: none; /* Usunięcie cienia */
+    height: 100%; /* Pełna wysokość rodzica */
+    
+}
+
+.nawigacja-lewa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10%; /* Równe odstępy między elementami */
+}
+
+.nawigacja-lewa li {
+    margin: 0; /* Brak dodatkowych marginesów */
+}
+
+.nawigacja-lewa a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrowanie tekstu */
+}
+.nawigacja-lewa a:hover {
+    background-color: #e74c3c; /* Czerwony świąteczny akcent */
+    color: white;
+}
+
+.nawigacja {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nawigacja li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nawigacja a {
+    text-decoration: none;
+    color: rgb(156, 107, 107);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nawigacja a:hover {
+    background-color: #1f618d;
+}
+
+.dlugosc {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+
+.glowna {
+    flex: 2;
+    background: #cecdcd;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stopka {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    font-size: 12px; /* Zmniejszenie rozmiaru czcionki */
+    padding: 10px 0; /* Zmniejszenie odstępu w pionie */
+    text-align: center; /* Wyrównanie tekstu do środka */
+    border-top: 4px solid #2980b9;
+    min-height: 30px; /* Minimalna wysokość stopki */
+    
+}
+
+.stopka .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Zmniejszenie odstępu między sekcjami */
+}
+
+.stopka .footer-content div {
+    flex: 1;
+    max-width: 200px; /* Zmniejszenie szerokości sekcji */
+    padding: 10px;
+}
+
+.stopka .footer-content h3 {
+    font-size: 1em; /* Zmniejszenie rozmiaru nagłówków */
+    margin-bottom: 8px; /* Zmniejszenie marginesu poniżej nagłówków */
+}
+
+.stopka .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.stopka .footer-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.stopka .footer-content a:hover {
+    color: #2980b9;
+}
+
+.stopka p {
+    font-size: 0.8em; /* Zmniejszenie rozmiaru tekstu w stopce */
+    margin-top: 20px;
+}

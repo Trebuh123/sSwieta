@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Pełna wysokość widoku */
+    margin: 0; /* Usunięcie marginesu */
+}
+
+/* Nagłówek */
+.naglowek {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #2980b9;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.naglowek p {
+    font-size: 1.3em;
+    margin-top: 10px;
+}
+
+/* Główna kontener - 5-sekcyjny podział */
+.main-container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    justify-content: space-between; /* Ustawienie nawigacji, kafelków i reklamy w jednej linii */
+    padding: 20px;
+}
+
+/* Nawigacja po lewej stronie */
+.nawigacja-lewa {
+    width: 20%;
+    background-color: transparent;
+    padding: 15px;
+    box-shadow: none; /* Usunięcie cienia */
+    height: 100%; /* Pełna wysokość rodzica */
+}
+
+.nawigacja-lewa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10%; /* Równe odstępy między elementami */
+}
+
+.nawigacja-lewa li {
+    margin: 0; /* Brak dodatkowych marginesów */
+}
+
+.nawigacja-lewa a {
+    text-decoration: none;
+    color: rgb(233, 138, 84);
+    font-weight: bold;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrowanie tekstu */
+}
+
+.nawigacja-lewa a:hover {
+    background-color: #e74c3c; /* Czerwony świąteczny akcent */
+    color: white;
+}
+
+.nawigacja {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nawigacja li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nawigacja a {
+    text-decoration: none;
+    color: rgb(156, 107, 107);
+    font-weight: bold;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nawigacja a:hover {
+    background-color: #1f618d;
+}
+
+/* Kafelki wyśrodkowane */
+.kafelki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Wyśrodkowanie kafelków */
+    gap: 20px;
+    width: 60%; /* Kafelki zajmują 60% szerokości */
+}
+
+/* Każdy kafelek */
+.kafelek {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 45%; /* Kafelki mają szerokość 45% */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.kafelek:hover {
+    transform: scale(1.05);
+}
+
+.kafelek h3 {
+    margin-top: 10px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.kafelek p {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Reklama */
+.reklama {
+    width: 20%; /* Reklama zajmuje 20% szerokości */
+    background-color: #ecf0f1;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stopka */
+.stopka {
+    background-color: #006400;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 15px 0;
+    border-top: 5px solid #1569a1;
+    margin-top: auto;
+}
+
+.stopka .footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.stopka .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stopka .footer-content li {
+    margin: 5px 0;
+}
+
+.stopka .footer-content a {
+    text-decoration:none;
+    color: #1382a3;
+}

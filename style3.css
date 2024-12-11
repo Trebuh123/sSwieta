@@ -1,0 +1,162 @@
+/* Resetowanie stylów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Tło strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Błękitne tło przypominające zimę */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Nagłówek */
+.naglowek {
+    background-color: #d32f2f; /* Czerwony kolor charakterystyczny dla Świąt */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #ffcc00; /* Złoty akcent */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.naglowek p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+/* Główna kontener - 5-sekcyjny podział */
+.main-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Nawigacja po lewej stronie */
+.nawigacja-lewa {
+    width: 20%;
+    background-color: tran;
+    padding: 15px;
+}
+
+.nawigacja-lewa ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nawigacja-lewa li {
+    margin-bottom: 10px;
+}
+
+.nawigacja-lewa a {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nawigacja-lewa a:hover {
+    background-color: #ff6347; /* Zmiana koloru na pomarańczowy */
+}
+
+/* Kafelki */
+.kafelki {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60%;
+    justify-content: center;
+}
+
+.kafelek {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.kafelek:hover {
+    transform: scale(1.05);
+}
+
+.kafelek h3 {
+    font-size: 1.8em;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.kafelek p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Reklama po prawej stronie */
+.kolumna-prawa {
+    width: 20%;
+    padding: 15px;
+    background-color: transparent;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kolumna-prawa h2 {
+    font-size: 1.5em;
+    color: #d32f2f;
+}
+
+.kolumna-prawa img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Stopka */
+.stopka {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    padding: 15px 0;
+    border-top: 5px solid #ffcc00;
+    margin-top: auto;
+}
+
+.stopka .footer-content {
+    display: flex;
+    justify-content: center;
+}
+
+.stopka .footer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stopka .footer-content li {
+    margin: 5px 0;
+}
+
+.stopka .footer-content a {
+    text-decoration: none;
+    color: #ffcc00;
+}
